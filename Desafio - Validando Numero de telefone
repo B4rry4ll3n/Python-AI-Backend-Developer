@@ -1,0 +1,7 @@
+import re
+phone_number = input()
+padrao = r"\(\d{2}\) \d{5}-\d{4}"
+if re.match(padrao, phone_number):
+    print("Número de telefone válido.")
+else:
+    print("Número de telefone inválido.")
